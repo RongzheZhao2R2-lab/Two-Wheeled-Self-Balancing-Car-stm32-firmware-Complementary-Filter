@@ -4,7 +4,7 @@
 [![Sensor Fusion](https://img.shields.io/badge/Algorithm-Complementary%20Filter-green)](#sensor-fusion-implementation)
 [![Control](https://img.shields.io/badge/Control-Cascaded%20PID-orange)](#control-system-topology)
 
-**Developer:** Rongzhe Zhao (RongzheZhao2R2-lab)  
+
 **Focus:** Real-time Embedded Systems, Sensor Fusion, Control Theory
 
 ---
@@ -19,7 +19,14 @@ Key Engineering Challenges Solved:
 
 ---
 
-## 2. Control System Topology
+## 2. System Demonstration
+The following footage demonstrates the robot's self-balancing capability, showing its stability maintenance and response to disturbances.
+
+https://github.com/user-attachments/assets/ba81e1eb-6cd0-43c9-939e-c91b358648ca
+
+---
+
+## 3. Control System Topology
 The robot employs a **Cascaded PID** strategy, decoupling the control tasks into three parallel/nested loops.
 
 ```mermaid  
@@ -41,5 +48,4 @@ graph TD
 
     D --> G{Motor Mixer}  
     F --> G  
-    G -->|PWM Signal| H[Motor Driver]
-
+    G -->|PWM Signal| H[Motor Driver]  
